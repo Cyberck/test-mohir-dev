@@ -4,23 +4,54 @@
 // window.addEventListener('DOMContentLoaded', () => {
 //     const tabs = document.querySelectorAll('li');
 //         function video() {
-            
+
 //         }
 // });
 
+let numberOfNews = +prompt('Siz kancha yangilik kudingiz?', '');
 
+console.log(numberOfNews);
 
-let result = '';
-const asd = 7;
+let personalNewsDB = {
+    count: `${numberOfNews}`,
+    news: {},
+    actors: '',
+    genres: [],
+    privat: false,
+};
+console.log((personalNewsDB));
 
-for (let i = 0; i <= asd; i++) {
-    for (let j = 0; j <= i; j++) {
-        result += '*';
+for (let i = 0; i <= 2; i++) {
+    const a = prompt('Ohirgi kurgan filmlarigiz?', ''),
+        b = +prompt('Unga kancha baho bergan bulasiz?', '');
+
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalNewsDB.news[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
     }
-
-    result += '\n';
 }
-console.log(result);
+
+
+
+
+
+
+
+
+// let result = '';
+// const asd = 7;
+
+// for (let i = 0; i <= asd; i++) {
+//     for (let j = 0; j <= i; j++) {
+//         result += '*';
+//     }
+
+//     result += '\n';
+// }
+// console.log(result);
 
 
 
