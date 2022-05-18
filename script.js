@@ -1,16 +1,26 @@
 "use strict";
 
 
-window.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('li');
-        function video() {
+// window.addEventListener('DOMContentLoaded', () => {
+//     const tabs = document.querySelectorAll('li');
+//         function video() {
             
-        }
-});
+//         }
+// });
 
 
 
+let result = '';
+const asd = 7;
 
+for (let i = 0; i <= asd; i++) {
+    for (let j = 0; j <= i; j++) {
+        result += '*';
+    }
+
+    result += '\n';
+}
+console.log(result);
 
 
 
